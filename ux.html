@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="images/logoblack.png">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="css/html5reset.css">
+    <link rel = "stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="style.js"></script>
+    <script src="typewriter.js"></script>
+    <title>Branding</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img tabindex="0" src="images/namelogo.png" alt="Sharra Kutty Logo" id="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html" tabindex="0" >HOME</a></li>
+                <li><a href="branding.html" tabindex="0" >BRANDING</a></li>
+                <li class="active"><a href="ux.html"tabindex="0" >UI/UX DESIGN</a></li>
+                <li><a href="https://drive.google.com/file/d/1rA7DiZLynl0ULLULmuRbwtA-rdXx9pmu/view?usp=sharing" tabindex="0" >RESUME</a></li>
+                <li><a href="https://www.linkedin.com/in/sharra-kutty/"tabindex="0" >LINKEDIN</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <h1>UI/UX Design </h1>
+    <div>
+        <span tabindex="0" id="typewriter-1" data-text="UI/UX Design"></span>
+        <script>
+            $(document).ready(function() {
+                var $this = $('#typewriter-1');
+                $this.typeIt($this.data('text'), 0.3, 'html');
+            });
+        </script>
+    </div>
+    <h2>User Interfaces that I have created for school projects or client work</h2>
+    <div class="grid-container">
+        <div class="grid-item">
+            <a href="simple.html">
+                <div tabindex="0" class="image-container gif-1">
+                    <img src="videos/SimpleGif.gif" width = "500" alt="website home page of an SI project">
+                    <img src="images/thumb_Simple.png" class="thumbnail" width="500" alt="Simple thumbnail image">
+                </div>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="trisense.html">
+                <div tabindex="0" class="image-container gif-2">
+                    <img src="videos/Trisense.gif" width = "500" alt="App devlopment for product Trisense">
+                    <img src="images/thumb_Trisense.png" class="thumbnail" width="500" alt="Trisense thumbnail image">
+                </div>
+            </a>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <p>Copyright &copy; Sharra Kutty 2024. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/sharrakutty/"><img src="images/instagram.png" alt="Instagram Logo"></a>
+                <a href="https://github.com/sharrakutty"><img src="images/github.png" alt="Github Logo"></a>
+            </div>
+        </div>
+    </footer>
+    </main>
+</body>
+</html>

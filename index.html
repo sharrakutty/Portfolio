@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="images/logoblack.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="css/html5reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Sharra Kutty</title>
+    <style>
+        #background-video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+        display: none;
+        object-fit: cover;
+        }
+        
+        body {
+        padding-top: 50px;
+        font-family: 'Josefin Sans', sans-serif;
+        margin: 0;
+        background-color: white;
+        padding: 80px;
+    }
+    
+        #logo {
+        padding-left: 80px;
+        }
+    
+        body {
+            background-image: url('images/IMG_0979.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            transition: background-color 0.5s ease;
+            padding: 80px 0;
+        }
+        
+        body.active {
+            background-color: transparent;
+        }
+        
+    header {
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        padding: 1em;
+    }
+    
+    nav {
+        z-index: 1000; /* set a higher z-index value */
+        margin-right: 80px;
+      }
+    
+    header #logo {
+        height: 70px;
+        width: auto;
+    }
+    
+    header nav ul {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    header nav ul li {
+        margin-right: 1em;
+    }
+    
+        h1 {
+        text-align: center;
+        padding: 200px;
+        padding-bottom: 400px;
+        color:#fff;
+        font-weight: normal;
+        line-height: 1.4;
+        font-size: xx-large;
+        }
+        
+        header nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        padding: 0.5em;
+        border-radius: 5px;
+        }
+    
+        header nav ul li a:hover {
+        background-color: #7b614e;
+        }
+    
+        footer {
+            color: black;
+            padding-left: 40px;
+        }
+       
+        header nav ul li.active a {
+            background-color: #543a29;
+        }
+    
+        
+        h2 {
+            background-color: white;
+            color: black;
+            padding-top: 80px;
+            margin: 20px 0;
+            font-size: large;
+        }
+        
+        h2 {
+        color: black;
+        font-weight: normal;
+    }
+        
+        h2.with-image {
+            display: flex;
+            align-items: flex-start;
+            background-color: white;
+            color: black;
+            padding: 40px;
+            margin: 0px 0;
+            position: relative;
+        }
+    
+        h2.with-image img {
+            width: 300px;
+            height: auto;
+            margin-right: 40px;
+        }
+    
+        h2.with-image .text-container {
+            position: absolute; 
+            top: 0; 
+            left: 360px;
+            width: calc(100% - 360px); 
+            box-sizing: border-box;
+            padding: 50px;
+            background-color: white; 
+        }
+        .carousel-container {
+            width: 100%;
+            height: 105vh; 
+            overflow: hidden;
+            position: relative;
+        }
+    
+        .carousel-item {
+            width: 100%;
+            display: none;
+            width: 100%; 
+            height: auto; 
+            position: relative; 
+            z-index: 2; 
+        }
+    
+        .carousel-item img {
+            width: 100%;
+             height: 100%;
+    
+        }
+    
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0);
+      transition: background-color 0.3s ease;
+    }
+    
+    .carousel-item:hover .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+    
+    .title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      font-weight: 600;
+    }
+    
+    
+    .carousel-item:hover .title {
+      opacity: 1;
+    }
+        h3 {
+            text-align: center;
+            font-size: xx-large;
+            font-weight: 900;
+            padding-top: 20px;
+            padding-bottom: 30px;
+            position: relative;
+            z-index: 3;
+        }
+    
+        h4 {
+            font-size: xx-large;
+            letter-spacing: 0.5vh;
+        }
+    
+        .carousel-button {
+            background-color: transparent;
+            border: none;
+            position: absolute; 
+            top: 95%; 
+            left: 50%;
+            transform: translate(-100%, -50%); 
+            z-index: 2; 
+            border: none;
+            cursor: pointer;
+            padding-top: 2950px;
+        }
+    
+        #prevBtn {
+            left: 40px;
+            transform: translateY(-50%) translateX(-50%);
+        }
+    
+        #nextBtn {
+            right: 40px;
+            transform: translate(-50%, -50%) translateX(100%);
+        }
+    
+        .carousel-button img {
+            width: 30px;
+            height: 30px;
+        }
+    
+        footer {
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .social-icons {
+        display: flex;
+    }
+    
+    .social-icons a {
+        margin: 0 10px;
+        height: 20px;
+    }
+    
+    @media (prefers-reduced-motion: reduce) {
+        video {
+          animation-play-state: paused;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img tabindex="0" src="images/logo.png" alt="Sharra Kutty Logo" id="logo">
+        <video id="background-video" autoplay loop muted playsinline>
+            <source src="videos/IMG_0458.mov" type="video/mp4">
+        </video>
+        <nav>
+            <ul>
+                <li class="active"><a href="index.html" tabindex="0" >HOME</a></li>
+                <li><a href="branding.html" tabindex="0" >BRANDING</a></li>
+                <li><a href="ux.html" tabindex="0">UI/UX DESIGN</a></li>
+                <li><a href="https://drive.google.com/file/d/1rA7DiZLynl0ULLULmuRbwtA-rdXx9pmu/view?usp=sharing" tabindex="0">RESUME</a></li>
+                <li><a href="https://www.linkedin.com/in/sharra-kutty/" tabindex="0" >LINKEDIN</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 tabindex="0" > Hello I'm Sharra Kutty! I am a BBA student <br>through the Ross School of Business at the <br> University of Michigan with a minor in <br> UX/UI design and sustainability looking <br> to go into the marketing field. <br><br>Take a look at my work through the tabs! </h1>
+        <h2 tabindex="0"  class="with-image">
+            <img src="images/Profilepic.jpg" alt="Sharra Kutty Profile Pic">
+            <div class="text-container">
+                <p style="font-weight: bold;">Hi, my name is Sharra Kutty!</p> <br>
+                I'm currently a sophomore at the Ross School of Business, University of Michigan, majoring in Business Administration with a focus on marketing. <br><br>
+                Originally from the Bay Area, California, I've been exposed to a rich tapestry of cultural experiences, particularly within the classical dance sphere, where I've witnessed the evolving representation of Brown women—an experience that has deeply shaped who I am. My journey has been a fusion of my passion for both the arts and business. I've always been drawn to the creative aspect of marketing, and my background provides me with a unique perspective to contribute fresh ideas and insights to this dynamic field. <br><br>
+                Throughout my academic career, I've honed my analytical and problem-solving skills, drawing inspiration from the nuances of human behavior and the power of storytelling. This blend of creativity and strategic thinking has led me to explore various industries, from startups to nonprofits and beyond, where I've had the opportunity to apply user-centered principles to solve complex business challenges. <br><br>
+                Outside of my academic pursuits, you'll often find me exploring local cafés, indulging in artistic endeavors, or enjoying some freshly baked bread—I'm a bit of a foodie!
+                I'm truly passionate about the intersection of creativity and business, and I'm eager to bring my unique blend of skills and experiences to any marketing role. I'd love to learn more about your company and how I can contribute to its success. Thank you for considering me, and I look forward to the opportunity to collaborate with you!<br><br>
+                Connect with me! <br>
+                Send me a message at sharra.v.kutty@gmail.com <br>
+                510.901.8090
+            </div>
+        </h2>
+        <div>
+            <h3 tabindex="0" >Take a look at my passions!</h3>
+            <div tabindex="0" class="carousel-container">
+                <div class="carousel-item">
+                  <img src="images/Travel.png" alt="Collage of Travel Photography">
+                  <div class="overlay">
+                    <h4 class="title">PHOTOGRAPHY</h4>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Food.png" alt="Collage of Food">
+                  <div class="overlay">
+                    <h4 class="title">FOOD</h4>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Dance.png" alt="Collage of Dance Images">
+                  <div class="overlay">
+                    <a href="https://lydiadaniller.pixieset.com/sharrakutty/">
+                        <h4 class="title">DANCE</h4>
+                    </a>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Music.png" alt="Collage of Music Albums that I love">
+                    <div class="overlay">
+                        <a href="https://open.spotify.com/user/4mhe6h7y9m73xft4qsbs2q1x4?si=hwFkFDP2QTWFYeJZqNtgpA">
+                            <h4 class="title">MUSIC</h4>
+                        </a>
+                      </div>
+                  </div>
+            </div>
+            <button id="prevBtn" class="carousel-button">
+                <img src="images/back.png" alt="Previous button">
+            </button>
+            <button id="nextBtn" class="carousel-button">
+                <img src="images/next.png" alt="Next button">
+            </button>
+        </div>
+    <footer>
+        <div class="footer-container">
+            <p>Copyright &copy; Sharra Kutty 2024. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/sharrakutty/"><img src="images/instagram.png" alt="Instagram Logo"></a>
+                <a href="https://github.com/sharrakutty"><img src="images/github.png" alt="Github Logo"></a>
+            </div>
+        </div>
+    </footer>
+    </main>
+    <script src="style.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="images/logoblack.png">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="css/html5reset.css">
+    <link rel = "stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="style.js"></script>
+    <script src="typewriter.js"></script>
+    <title>Branding</title>
+</head>
+<body>
+    <header>
+        <a tabindex="0" href="index.html">
+            <img src="images/namelogo.png" alt="Sharra Kutty Logo" id="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html" tabindex="0" >HOME</a></li>
+                <li class="active" tabindex="0" ><a href="branding.html">BRANDING</a></li>
+                <li><a href="ux.html" tabindex="0">UI/UX DESIGN</a></li>
+                <li><a href="https://drive.google.com/file/d/1rA7DiZLynl0ULLULmuRbwtA-rdXx9pmu/view?usp=sharing" tabindex="0">RESUME</a></li>
+                <li><a href="https://www.linkedin.com/in/sharra-kutty/" tabindex="0" >LINKEDIN</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Branding</h1>
+        <div>
+            <span tabindex="0" id="typewriter-1" data-text="Branding"></span>
+            <script>
+                $(document).ready(function() {
+                var $this = $('#typewriter-1');
+                    $this.typeIt($this.data('text'), 0.3, 'html');
+                });
+            </script>
+        </div>
+        <h2>Social Media accounts as well apparel that I handled and created throughout my time based on my club involvements as well as my personal accounts.</h2>
+        <div class="grid-container">   
+            <div class="grid-item">
+                <a href="mam.html">
+                    <div class="image-container">
+                        <img src="images/MAM.png" width="500" alt="MAM work overview collage">
+                        <img src="images/thumb_MAM.png" class="thumbnail" width="500" alt="MAM thumbnail image">
+                    </div>
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="thrivery.html">
+                    <div class="image-container">
+                        <img src="images/theThrivery.png" width = "500" alt="The Thrivery work overview collage">
+                        <img src="images/thumb_Thrivery.png" class="thumbnail" width="500" alt="The Thrivery thumbnail image">
+                    </div>
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="current2.html">
+                    <div class="image-container">
+                        <img src="images/Current2.png" width = "500" alt="Current2 work overview collage">
+                        <img src="images/thumb_Current2.png" class="thumbnail" width="500" alt="Current2 thumbnail image">
+                    </div>
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="personal.html">
+                    <div class="image-container">
+                        <img src="images/Personal.png" width = "500" alt="My Personal Branding through Instagram">
+                        <img src="images/thumb_Personal.png" class="thumbnail" width="500" alt="Personal thumbnail image">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-container">
+                <p>Copyright &copy; Sharra Kutty 2024. All rights reserved.</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/sharrakutty/"><img src="images/instagram.png" alt="Instagram Logo"></a>
+                    <a href="https://github.com/sharrakutty"><img src="images/github.png" alt="Github Logo"></a>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
