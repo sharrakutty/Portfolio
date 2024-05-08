@@ -60,11 +60,15 @@ h2 {
 	color: black;
 	font-weight: normal;
 	font-size: x-large;
-	padding-bottom: 30px;
 }
 
 h3 {
 	font-weight: normal;
+}
+
+p {
+	font-size: 1.2em;
+	margin-top: auto;
 }
 
 .grid-container {
@@ -120,6 +124,7 @@ body {
 .container {
     flex: 1;
 }
+
 
 /* footer*/
 footer {
@@ -180,12 +185,6 @@ html, body {
 	overflow-x: hidden;
 }
 
-.section {
-	margin-bottom: 30px;
-	padding-left: 300px;
-	padding-right: 300px;
-}
-
 
 .name {
 	max-width: 100%;
@@ -228,3 +227,34 @@ html, body {
 		text-align: left;
 	}
   }
+
+/*header images*/
+
+.header img {
+    max-width: 100%;
+    max-height: auto; /* adjust the value as needed */
+    height: auto;
+    display: block;
+	overflow: hidden;
+	position: relative;
+}
+
+/*side images*/
+.side-img-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sections {
+    flex-basis: 70%;
+	flex: 1;
+}
+
+.side-img {
+    flex-basis: 30%; /* adjust the width of the image container */
+}
+
+.side-img img {
+    width: 370px;
+    height: 480px;
+}
