@@ -254,3 +254,14 @@ html, body {
     flex-basis: 30%; /* adjust the width of the image container */
 }
 
+.section {
+	margin-bottom: 30px;
+	padding-left: 230px;
+	padding-right: 230px;
+}
+
+ol {
+	font-size: 20px;
+	line-height: 1.2em;
+	padding: auto;
+}
