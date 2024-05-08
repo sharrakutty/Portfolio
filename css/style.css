@@ -254,7 +254,3 @@ html, body {
     flex-basis: 30%; /* adjust the width of the image container */
 }
 
-.side-img img {
-    width: 370px;
-    height: 480px;
-}
